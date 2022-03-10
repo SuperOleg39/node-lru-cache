@@ -9,7 +9,7 @@
     "cache"
   ],
   "scripts": {
-    "prepare": "webpack-cli -o bundle ./index.js --node-env production",
+    "prepare": "rollup index.js --file bundle/main.js --format cjs",
     "build": "npm run prepare",
     "presize": "npm run prepare",
     "test": "tap",
@@ -29,9 +29,9 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
     "benchmark": "^2.1.4",
+    "rollup": "^2.70.0",
     "size-limit": "^7.0.8",
-    "tap": "^15.1.6",
-    "webpack-cli": "^4.9.2"
+    "tap": "^15.1.6"
   },
   "license": "ISC",
   "files": [
