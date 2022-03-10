@@ -20,11 +20,6 @@
     "prepublishOnly": "git push origin --follow-tags"
   },
   "main": "index.js",
-  "browser": "./bundle/main.js",
-  "exports": {
-    ".": "./index.js",
-    "./browser": "./bundle/main.js"
-  },
   "repository": "git://github.com/isaacs/node-lru-cache.git",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.8",
